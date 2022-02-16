@@ -1,44 +1,22 @@
 function doStuff(){
-
-    changeColor()
-    alert(randomWords())
-
-
+    showAlert()
 }
 
 
 
-function changeColor() {
-    document.getElementById("titlename").style.color = randomColors();
-    document.body.style.background = randomColors();
-  
+function showAlert() {
 
-   
+var number = prompt("Type Something, except racecar")
+console.log(number)
+letterCount = number.length;
+console.log(letterCount)
+if (letterCount < 5) {
+alert("enter more text please")
+var number = prompt("Type Something")
 }
-
-function randomColors() {
-    return 'rgb('+getSmallinteger(255)+','+getSmallinteger(255)+','+getSmallinteger(255)+')'
+else {
+number = number.split('').reverse().join('')
+alert(number)
 
 }
-
-
-function getSmallinteger(max) {
-
-   var small = Math.random() * max 
-   small = Math.round(small) 
-   return small
-  }
-
-function randomWords() {
-var sentences= [
-    'out of words',
-    'your internet supply has been depleted',
-    'the time has run out',
-    'the internet has disappeared',
-    'you have become invisible',
-'asdasdasdasdasdasd',]
-var small = getSmallinteger(sentences.length);
-console.log(small)
-    return sentences[small]
 }
-
