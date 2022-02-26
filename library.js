@@ -14,8 +14,15 @@ if (letterCount < 5) {
 alert("enter more text please")
 }
 else {
-number = number.split('').reverse().join('')
-alert(number)
-console.log(number)
+    var testy = ''
+for(const brokenDownString of number){
+    
+    console.log(brokenDownString);
+    testy +='.';
+
+    alert(testy)
+
+  
+}
 }
 }
