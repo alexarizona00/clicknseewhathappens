@@ -14,15 +14,21 @@ if (letterCount < 5) {
 alert("enter more text please")
 }
 else {
-    var testy = ''
+    var vowels = "aeiou";
+var result = ""
+var vowelsLength = vowels.length;
+    result += vowels.charAt(Math.floor(Math.random() * vowelsLength));
+}
+
+console.log(result)
+    var testy = '';
+    var chosenOne = result
+    console.log(chosenOne)
 for(const brokenDownString of number){
     
     console.log(brokenDownString);
-    testy +='.';
-
-    alert(testy)
-
-  
+    testy += brokenDownString + chosenOne
+ 
 }
-}
+alert(testy)
 }
