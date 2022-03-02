@@ -1,7 +1,12 @@
 function doStuff() {
     showAlert()
 }
+var vowels = "aeiou";
+var result = ""
+
+
 function showAlert() {
+
     var number = prompt("Type Something, except racecar")
     console.log(number)
     letterCount = number.length;
@@ -10,8 +15,7 @@ function showAlert() {
         alert("enter more text please")
     }
     else {
-        var vowels = "aeiou";
-        var result = ""
+
 
         console.log(result)
         var testy = '';
