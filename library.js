@@ -18,13 +18,17 @@ function showAlert() {
 
 
         console.log(result)
+        brokenDownString = number.split('')
         var testy = '';
-        for (const brokenDownString of number) {
+        console.log(brokenDownString)
+        for (i=0; i < letterCount; i++){
+                      
+            testy += brokenDownString[i] + '.' + vowels.charAt(Math.floor(Math.random() * 4));
 
-            console.log(brokenDownString);
-            testy += brokenDownString + vowels.charAt(Math.floor(Math.random() * 4));
+        }
+
+        
 
         }
         alert(testy)
     }
-}
